@@ -53,4 +53,5 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
     Navigator.of(context).pop();
   }
 
+
 }

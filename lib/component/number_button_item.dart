@@ -6,7 +6,7 @@ class NumberButtonItem extends StatelessWidget {
   final int fillColor;
   final int textColor;
   final double textSize;
-  final Function callback;
+  final Function() callback;
 
   const NumberButtonItem({
     Key? key,
@@ -35,11 +35,12 @@ class NumberButtonItem extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius .circular(50),
                 ),
-                onPressed: () {
-                  //callback(text);
-                  callback;
-                  HapticFeedback.selectionClick();
-                },
+                // onPressed: () {
+                //   //callback(text);
+                //   callback;
+                //   HapticFeedback.selectionClick();
+                // },
+                 onPressed: callback,
                 child: Text(
                   text,
                   style: TextStyle(
