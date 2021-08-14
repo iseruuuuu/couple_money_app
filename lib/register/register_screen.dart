@@ -192,7 +192,11 @@ class RegisterScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
 
+                  Row(
+                    children: [
 
+                    ],
+                  )
 
 
                   const SizedBox(height: 10),
