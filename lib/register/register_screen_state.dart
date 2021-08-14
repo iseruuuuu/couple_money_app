@@ -25,8 +25,9 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
 
   void numClick(String text) {
     if (expression.length >= 7) {} else{
+      expression += text;
       state = state.copyWith(
-        exp: expression + text,
+        exp: expression,
       );
     }
   }
