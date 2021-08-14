@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:couple_money_app/register/register_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +36,15 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
   }
 
   void delete() {
-
+    if(expression.isEmpty){}
+    else{
+      final pos = expression.length - 1;
+      expression = expression.substring(0, pos);
+      state = state.copyWith(
+        exp: expression.substring(0, pos),
+      );
+    }
   }
+
+
 }
