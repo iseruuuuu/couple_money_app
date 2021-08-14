@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class WomansListItem extends StatelessWidget {
-  const WomansListItem({Key? key}) : super(key: key);
+  WomansListItem({Key? key}) : super(key: key);
+
+  List todoList = [
+    'ss',
+    'ss',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +27,35 @@ class WomansListItem extends StatelessWidget {
                   color: Colors.indigo,
                   fontSize: 25,
                   fontWeight: FontWeight.bold
+              ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: todoList.length,
+                itemBuilder: (context, index) {
+                  return Card(
+                    shape: RoundedRectangleBorder(
+                      side: const BorderSide(color: Colors.white70, width: 1),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: ListTile(
+                      title: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Center(
+                            child: Text(
+                              '￥' + todoList[index],
+                              style: const TextStyle(
+                                fontSize: 30,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
           ],
