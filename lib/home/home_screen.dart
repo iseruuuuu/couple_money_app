@@ -1,3 +1,5 @@
+import 'package:couple_money_app/component/mens_list_item.dart';
+import 'package:couple_money_app/component/womans_list_item.dart';
 import 'package:flutter_state_notifier/flutter_state_notifier.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
@@ -22,43 +24,10 @@ class HomeScreen extends StatelessWidget {
           body: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                children: [
-                  const Text(
-                    'Mens',
-                    style: TextStyle(
-                      color: Colors.indigo,
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  const Divider(
-                    height: 40,
-                    thickness: 3,
-                    color: Colors.black,
-                    indent: 16,
-                    endIndent: 16,
-                  ),
-                ],
-              ),
+              MensListItem(),
 
-              // 区切り線
+              WomansListItem(),
 
-
-              Column(
-                children: [
-                  const Text(
-                    'Womans',
-                    style: TextStyle(
-                      color: Colors.indigo,
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
-              ),
             ],
           ),
         );
