@@ -75,7 +75,6 @@ class RegisterScreen extends StatelessWidget {
                                       '⌫',
                                       style: TextStyle(
                                         fontSize: 40,
-                                        // fontSize: 50,
                                       ),
                                     ),
                                   ),
