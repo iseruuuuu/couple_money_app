@@ -25,18 +25,33 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               MensListItem(),
-             SizedBox(
-               width: 0,
-               height: MediaQuery.of(context).size.height,
-               child: const VerticalDivider(
-                 color: Colors.black,
-                 thickness: 3,
-               ),
-             ),
+              SizedBox(
+                width: 0,
+                height: MediaQuery.of(context).size.height,
+                child: const VerticalDivider(
+                  color: Colors.black,
+                  thickness: 3,
+                ),
+              ),
               WomansListItem(),
-
             ],
           ),
+          floatingActionButton: FloatingActionButton.extended(
+            onPressed: () async {},
+            icon: const Icon(
+              Icons.add,
+              size: 30,
+              color: Colors.white,
+            ),
+            label: const Text(
+              '給料を追加',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         );
       },
     );
