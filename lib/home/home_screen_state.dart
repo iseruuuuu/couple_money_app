@@ -12,10 +12,11 @@ abstract class HomeScreenState with _$HomeScreenState {
   }) = _HomeScreenState;
 }
 
-class HomeScreenController extends StateNotifier<HomeScreenState> with LocatorMixin {
+class HomeScreenController extends StateNotifier<HomeScreenState>
+    with LocatorMixin {
   HomeScreenController({
     required this.context,
-  }) : super (const HomeScreenState());
+  }) : super(const HomeScreenState());
 
   final BuildContext context;
 
@@ -28,5 +29,4 @@ class HomeScreenController extends StateNotifier<HomeScreenState> with LocatorMi
   void dispose() {
     super.dispose();
   }
-
 }
