@@ -1,7 +1,6 @@
 import 'package:couple_money_app/component/number_button_item.dart';
 import 'package:couple_money_app/register/register_screen_state.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:holding_gesture/holding_gesture.dart';
 import 'package:flutter_state_notifier/flutter_state_notifier.dart';
 import 'package:provider/provider.dart';
