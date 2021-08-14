@@ -54,5 +54,13 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
     Navigator.of(context).pop();
   }
 
+  void onTapManRegister() {
+    //TODO 男性のテキストを追加する
+  }
+
+  void onTapWomanRegister() {
+    //TODO 女性のテキストを追加する
+  }
+
 
 }
