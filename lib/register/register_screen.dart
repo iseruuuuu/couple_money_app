@@ -19,10 +19,6 @@ class RegisterScreen extends StatelessWidget {
       builder: (context, _) {
         final exp = context.select<RegisterScreenState, String>((state) => state.exp);
         return Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.red,
-            title: const Text('リスト追加'),
-          ),
           body: GestureDetector(
             onTap: () => FocusScope.of(context).unfocus(),
             child: Container(
@@ -43,6 +39,7 @@ class RegisterScreen extends StatelessWidget {
                         const Text(
                           '￥',
                           style: TextStyle(
+                            color: Colors.black,
                             fontSize: 30,
                           ),
                         ),
