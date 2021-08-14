@@ -44,7 +44,7 @@ class _TodoAddPageState extends State<TodoAddPage> {
         backgroundColor: Colors.red,
         title: const Text('リスト追加'),
       ),
-      body:  GestureDetector(
+      body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: Container(
           padding: const EdgeInsets.only(top: 20),
