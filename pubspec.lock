@@ -249,6 +249,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  holding_gesture:
+    dependency: "direct dev"
+    description:
+      name: holding_gesture
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   http_multi_server:
     dependency: transitive
     description:
@@ -501,4 +508,4 @@ packages:
     version: "3.1.0"
 sdks:
   dart: ">=2.12.0 <3.0.0"
-  flutter: ">=1.16.0"
+  flutter: ">=2.0.0"
