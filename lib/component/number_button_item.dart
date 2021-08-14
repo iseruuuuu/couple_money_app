@@ -35,16 +35,12 @@ class NumberButtonItem extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius .circular(50),
                 ),
-                // onPressed: () {
-                //   //callback(text);
-                //   callback;
-                //   HapticFeedback.selectionClick();
-                // },
                  onPressed: callback,
                 child: Text(
                   text,
                   style: TextStyle(
                     fontSize: textSize,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
