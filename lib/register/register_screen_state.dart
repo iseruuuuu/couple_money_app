@@ -49,4 +49,8 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
     );
   }
 
+  void onTapBack() {
+    Navigator.of(context).pop();
+  }
+
 }

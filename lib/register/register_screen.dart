@@ -221,9 +221,7 @@ class RegisterScreen extends StatelessWidget {
                       width: double.infinity,
                       height: 40,
                       child: TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
+                        onPressed: () => context.read<RegisterScreenController>().onTapBack(),
                         child: const Text(
                           'キャンセル',
                           style: TextStyle(
