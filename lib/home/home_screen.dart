@@ -30,11 +30,10 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           floatingActionButton: FloatingActionButtonItem(
-            onTap: () {
-
-            },
+            onTap: () {},
           ),
-          floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerFloat,
         );
       },
     );
