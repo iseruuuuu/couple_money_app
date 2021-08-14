@@ -13,38 +13,42 @@ class HomeScreen extends StatelessWidget {
         context: context,
       ),
       builder: (context, _) {
-        final Size size = MediaQuery.of(context).size;
         return Scaffold(
+          appBar: AppBar(
+            elevation: 0,
+            backgroundColor: Colors.white,
+          ),
           backgroundColor: Colors.white,
-          body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                const Text(
-                  'The 集中力',
-                  style: TextStyle(
-                    color: Colors.indigo,
-                    fontSize: 45,
-                  ),
-                ),
-                Container(
-                  width: size.width / 1.5,
-                  height: size.width / 6,
-                  child: ElevatedButton(
-                    // onPressed: () => context.read<HomeScreenController>().onTap(),
-                    onPressed: () {
-
-                    },
-                    child: const Text(
-                      'スタート',
-                      style: TextStyle(
-                        fontSize: 25,
-                      ),
+          body: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                children: [
+                  const Text(
+                    'Mens',
+                    style: TextStyle(
+                      color: Colors.indigo,
+                      fontSize: 20,
                     ),
                   ),
-                ),
-              ],
-            ),
+
+                ],
+              ),
+
+              const Divider(),
+
+              Column(
+                children: [
+                  const Text(
+                    'Womans',
+                    style: TextStyle(
+                      color: Colors.indigo,
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         );
       },
