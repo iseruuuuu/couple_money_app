@@ -14,7 +14,7 @@ class FloatingActionButtonItem extends StatelessWidget {
       width: MediaQuery.of(context).size.width / 1.3,
       height: 80,
       child: FloatingActionButton.extended(
-        onPressed: () async {},
+        onPressed: onTap,
         icon: const Icon(
           Icons.add,
           size: 50,

@@ -1,3 +1,4 @@
+import 'package:couple_money_app/register/register_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -28,5 +29,14 @@ class HomeScreenController extends StateNotifier<HomeScreenState>
   @override
   void dispose() {
     super.dispose();
+  }
+
+  void onTapRegister() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const RegisterScreen(),
+      ),
+    );
   }
 }
