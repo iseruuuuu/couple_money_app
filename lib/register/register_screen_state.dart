@@ -1,6 +1,3 @@
-import 'dart:math';
-
-import 'package:couple_money_app/register/register_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -26,9 +23,7 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
   String expression = '';
 
   void numClick(String text) {
-    if (expression.length >= 7) {
-
-    } else{
+    if (expression.length >= 7) {} else{
       state = state.copyWith(
         exp: expression + text,
       );
