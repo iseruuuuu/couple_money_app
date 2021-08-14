@@ -3,17 +3,14 @@ import 'package:flutter/material.dart';
 class MensListItem extends StatelessWidget {
   MensListItem({Key? key}) : super(key: key);
 
-  List todoList = [
-    '10000',
-    '1000000',
-  ];
+  List<String> todoList = [];
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
         width: MediaQuery.of(context).size.width / 2.3,
-        height: double.infinity,
+        height: MediaQuery.of(context).size.height / 1.3,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),

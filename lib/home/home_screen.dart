@@ -33,6 +33,7 @@ class HomeScreen extends StatelessWidget {
             onTap: () => context.read<HomeScreenController>().onTapRegister(),
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+
         );
       },
     );
