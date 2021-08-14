@@ -18,18 +18,19 @@ class HomeScreen extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             elevation: 0,
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.grey,
           ),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.grey,
           body: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               MensListItem(),
-
              SizedBox(
+               width: 0,
                height: MediaQuery.of(context).size.height,
                child: const VerticalDivider(
                  color: Colors.black,
+                 thickness: 3,
                ),
              ),
               WomansListItem(),
