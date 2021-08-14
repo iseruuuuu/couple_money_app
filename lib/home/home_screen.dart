@@ -1,6 +1,6 @@
 import 'package:couple_money_app/component/floating_action_button_item.dart';
-import 'package:couple_money_app/component/mens_list_item.dart';
-import 'package:couple_money_app/component/womans_list_item.dart';
+import 'package:couple_money_app/component/man_list_item.dart';
+import 'package:couple_money_app/component/woman_list_item.dart';
 import 'package:flutter_state_notifier/flutter_state_notifier.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               MensListItem(),
-              WomansListItem(),
+              ManListItem(),
             ],
           ),
           floatingActionButton: FloatingActionButtonItem(

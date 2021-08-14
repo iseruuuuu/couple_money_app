@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class WomansListItem extends StatelessWidget {
-  WomansListItem({Key? key}) : super(key: key);
+class ManListItem extends StatelessWidget {
+  ManListItem({Key? key}) : super(key: key);
 
   List todoList = [
     '9999',
