@@ -1,3 +1,4 @@
+import 'package:couple_money_app/component/floating_action_button_item.dart';
 import 'package:couple_money_app/component/mens_list_item.dart';
 import 'package:couple_money_app/component/womans_list_item.dart';
 import 'package:flutter_state_notifier/flutter_state_notifier.dart';
@@ -28,20 +29,10 @@ class HomeScreen extends StatelessWidget {
               WomansListItem(),
             ],
           ),
-          floatingActionButton: FloatingActionButton.extended(
-            onPressed: () async {},
-            icon: const Icon(
-              Icons.add,
-              size: 30,
-              color: Colors.white,
-            ),
-            label: const Text(
-              '給料を追加',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-              ),
-            ),
+          floatingActionButton: FloatingActionButtonItem(
+            onTap: () {
+
+            },
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         );
