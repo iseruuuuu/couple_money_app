@@ -31,11 +31,22 @@ class HomeScreen extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
-
+                ],
+              ),
+              Column(
+                children: [
+                  const Divider(
+                    height: 40,
+                    thickness: 3,
+                    color: Colors.black,
+                    indent: 16,
+                    endIndent: 16,
+                  ),
                 ],
               ),
 
-              const Divider(),
+              // 区切り線
+
 
               Column(
                 children: [
