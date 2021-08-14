@@ -9,7 +9,7 @@ part 'register_screen_state.freezed.dart';
 @freezed
 abstract class RegisterScreenState with _$RegisterScreenState {
   const factory RegisterScreenState({
-    @Default('') String FaceBookID,
+    @Default('') String exp,
   }) = _RegisterScreenState;
 }
 
@@ -21,22 +21,19 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
 
   final BuildContext context;
 
-  @override
-  void initState() {
-    super.initState();
+  String expression = '';
+
+  void numClick(String text) {
+    if (expression.length >= 7) {
+
+    } else{
+      state = state.copyWith(
+        exp: expression + text,
+      );
+    }
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
+  void delete() {
 
-  void onTapRegister() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const RegisterScreen(),
-      ),
-    );
   }
 }
