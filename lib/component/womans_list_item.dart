@@ -19,15 +19,11 @@ class WomansListItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Column(
-          // ignore: prefer_const_literals_to_create_immutables
           children: [
-            const Text(
-              'Womans',
-              style: TextStyle(
-                  color: Colors.indigo,
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold
-              ),
+            const Icon(
+              Icons.accessibility,
+              size: 80,
+              color: Colors.pinkAccent,
             ),
             Expanded(
               child: ListView.builder(

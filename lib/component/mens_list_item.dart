@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MensListItem extends StatelessWidget {
-   MensListItem({Key? key}) : super(key: key);
+  MensListItem({Key? key}) : super(key: key);
 
   List todoList = [
     'ss',
@@ -19,17 +19,12 @@ class MensListItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Column(
-          // ignore: prefer_const_literals_to_create_immutables
           children: [
-            const Text(
-              'Mens',
-              style: TextStyle(
-                  color: Colors.indigo,
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold
-              ),
+            const Icon(
+              Icons.accessibility,
+              size: 80,
+              color: Colors.indigo,
             ),
-
             Expanded(
               child: ListView.builder(
                 itemCount: todoList.length,
