@@ -10,18 +10,22 @@ class FloatingActionButtonItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FloatingActionButton.extended(
-      onPressed: () async {},
-      icon: const Icon(
-        Icons.add,
-        size: 30,
-        color: Colors.white,
-      ),
-      label: const Text(
-        '給料を追加',
-        style: TextStyle(
-          fontSize: 20,
+    return SizedBox(
+      width: MediaQuery.of(context).size.width / 1.3,
+      height: 80,
+      child: FloatingActionButton.extended(
+        onPressed: () async {},
+        icon: const Icon(
+          Icons.add,
+          size: 50,
           color: Colors.white,
+        ),
+        label: const Text(
+          '給料を追加',
+          style: TextStyle(
+            fontSize: 35,
+            color: Colors.white,
+          ),
         ),
       ),
     );
