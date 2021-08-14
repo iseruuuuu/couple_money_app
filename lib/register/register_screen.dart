@@ -1,4 +1,6 @@
+import 'package:couple_money_app/component/man_button_item.dart';
 import 'package:couple_money_app/component/number_button_item.dart';
+import 'package:couple_money_app/component/woman_button_item.dart';
 import 'package:couple_money_app/register/register_screen_state.dart';
 import 'package:flutter/material.dart';
 import 'package:holding_gesture/holding_gesture.dart';
@@ -191,14 +193,23 @@ class RegisterScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 8),
-
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-
+                      ManButtonItem(
+                        text: '登録する',
+                        textSize: 20,
+                        iconSize: 30,
+                        callback: () => context.read<RegisterScreenController>().allDelete(),
+                      ),
+                      WomanButtonItem(
+                        text: '登録する',
+                        textSize: 20,
+                        iconSize: 30,
+                        callback: () => context.read<RegisterScreenController>().allDelete(),
+                      ),
                     ],
-                  )
-
-
+                  ),
                   const SizedBox(height: 10),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 70),

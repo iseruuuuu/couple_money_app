@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class WomanButtonItem extends StatelessWidget {
   final String text;
-  final int fillColor;
-  final int textColor;
   final double textSize;
+  final double iconSize;
   final Function() callback;
 
   const WomanButtonItem({
     Key? key,
     required this.text,
-    required this.fillColor,
-    this.textColor = 0xFFFFFFFF,
     this.textSize = 28,
+    this.iconSize = 28,
     required this.callback,
   }) : super(key: key);
 
@@ -22,7 +19,7 @@ class WomanButtonItem extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(top: 2,bottom: 2,right: 0,left: 0),
       child: SizedBox(
-        width: 80,
+        width: MediaQuery.of(context).size.width / 2,
         height: 80,
         child: Theme(
           data: ThemeData(splashColor: Colors.white),
@@ -35,17 +32,23 @@ class WomanButtonItem extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius .circular(50),
                 ),
-                // onPressed: () {
-                //   //callback(text);
-                //   callback;
-                //   HapticFeedback.selectionClick();
-                // },
                 onPressed: callback,
-                child: Text(
-                  text,
-                  style: TextStyle(
-                    fontSize: textSize,
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.accessibility,
+                      color: Colors.pinkAccent,
+                      size: iconSize,
+                    ),
+                    Text(
+                      text,
+                      style: TextStyle(
+                        fontSize: textSize,
+                        color: Colors.pinkAccent,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
