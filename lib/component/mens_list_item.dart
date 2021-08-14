@@ -4,8 +4,8 @@ class MensListItem extends StatelessWidget {
   MensListItem({Key? key}) : super(key: key);
 
   List todoList = [
-    'ss',
-    'ss',
+    '10000',
+    '1000000',
   ];
 
   @override
@@ -42,7 +42,7 @@ class MensListItem extends StatelessWidget {
                             child: Text(
                               '￥' + todoList[index],
                               style: const TextStyle(
-                                fontSize: 30,
+                                fontSize: 25,
                                 color: Colors.black,
                               ),
                             ),
