@@ -20,7 +20,7 @@ class NumberButtonItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 2,bottom: 2,right: 0,left: 0),
+      margin: const EdgeInsets.only(top: 2,bottom: 2,right: 0,left: 0),
       child: SizedBox(
         width: 80,
         height: 80,
@@ -36,7 +36,8 @@ class NumberButtonItem extends StatelessWidget {
                   borderRadius: BorderRadius .circular(50),
                 ),
                 onPressed: () {
-                  callback(text);
+                  //callback(text);
+                  callback;
                   HapticFeedback.selectionClick();
                 },
                 child: Text(

@@ -43,7 +43,7 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
     }
   }
 
-  void allDelete(String text) {
+  void allDelete() {
     state = state.copyWith(
       exp: '',
     );

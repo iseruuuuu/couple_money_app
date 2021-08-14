@@ -186,7 +186,7 @@ class RegisterScreen extends StatelessWidget {
                         textSize: 30,
                         fillColor: 0xff424242,
                         textColor: 0xFFFFFFFF,
-                        callback: () {},
+                        callback: () => context.read<RegisterScreenController>().allDelete(),
                       ),
                     ],
                   ),
