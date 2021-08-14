@@ -26,6 +26,12 @@ class HomeScreen extends StatelessWidget {
             children: [
               MensListItem(),
 
+             SizedBox(
+               height: MediaQuery.of(context).size.height,
+               child: const VerticalDivider(
+                 color: Colors.black,
+               ),
+             ),
               WomansListItem(),
 
             ],
