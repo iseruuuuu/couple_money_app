@@ -25,14 +25,6 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               MensListItem(),
-              SizedBox(
-                width: 0,
-                height: MediaQuery.of(context).size.height,
-                child: const VerticalDivider(
-                  color: Colors.black,
-                  thickness: 3,
-                ),
-              ),
               WomansListItem(),
             ],
           ),
