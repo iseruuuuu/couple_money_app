@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:state_notifier/state_notifier.dart';
 
@@ -31,6 +32,7 @@ class RegisterScreenController extends StateNotifier<RegisterScreenState>
   }
 
   void delete() {
+    HapticFeedback.mediumImpact();
     if(expression.isEmpty){}
     else{
       final pos = expression.length - 1;
