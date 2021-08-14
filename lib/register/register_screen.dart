@@ -70,10 +70,7 @@ class RegisterScreen extends StatelessWidget {
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(50),
                                     ),
-                                    onPressed: () {
-                                      // delete();
-                                      HapticFeedback.selectionClick();
-                                    },
+                                    onPressed: () => context.read<RegisterScreenController>().delete(),
                                     child: const Text(
                                       '⌫',
                                       style: TextStyle(
